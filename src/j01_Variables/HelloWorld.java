@@ -28,9 +28,9 @@ public class HelloWorld {
     */
         System.out.print("Benim adım : Mehmet ");
         System.out.println("Soyadım : Baran");
-        System.out.println("Yaşım   : Otuz");
-        System.out.println("Memleketim : Çorum");
-        System.out.println("Mesleğim : işsiz");
+
+
+
 
 
     }
