@@ -28,6 +28,7 @@ public class HelloWorld {
     */
         System.out.print("Benim adım : Mehmet ");
         System.out.println("Soyadım : Baran");
+        System.out.println("Memleket : İstanbul");
 
 
 
