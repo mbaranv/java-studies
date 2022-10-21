@@ -1,4 +1,4 @@
-package J03_ScannerClass_TypeCasting.homeworks.ScannerTasks;
+package J03_ScannerClass_TypeCasting.tasks;
 
 import java.util.Scanner;
 
