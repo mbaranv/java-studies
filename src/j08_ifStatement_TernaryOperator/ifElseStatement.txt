@@ -1,0 +1,210 @@
+   /*
+        TASK: Girilen yaşın 18 den büyüklüğünü kontrol eden code create edeniniz.18den küçükse ehliyet alamazsınız print eden code create
+*/
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Yaş giriniz");
+        int yas = sc.nextInt();
+        if (yas >=18) {
+          //  System.out.println("Yaşınız 18 den büyük");
+        }
+        else {
+            System.out.println("Yaşınız 18 den küçük ehliyet alamazsınız");
+        }
+
+        // TASK: Girilen sayının negatif veya pozitif olmadığını tespit eden code create ediniz
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Bir sayı giriniz");
+        int sayi=sc.nextInt();
+
+        if (sayi>0){
+            System.out.println("Sayı sıfırdan büyük");
+        } else if (sayi<0) {
+            System.out.println("Sayı sıfırdan küçük");
+        }
+        else System.out.println("Sıfır girdiğini biliyorum");
+
+
+  /* Kullanıcıdan 100 üzerinden notunu isteyin notu harf sistemine çevirip yazdırın
+     50 den küçükse D
+     =50 60 arası C
+     =60 80 arası B
+     =80 üzeri A
+      */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Notunuzu giriniz");
+        int not = sc.nextInt();
+        if (not < 50 && not > 0) {
+            System.out.println("D aldınız");
+        } else if (not >= 50 && not < 60) {
+            System.out.println("C aldınız");
+        } else if (not >= 60 && not < 80) {
+            System.out.println("B aldınız");
+        } else if (not >= 80 && not <= 100)
+            System.out.println("A aldınız");
+        else System.out.println("Hatalı değer girdiniz");
+
+                // Artık yıl tespiti yapan code create ediniz
+                     /*
+                girilen bir yılın artık (LEAP YEAR) olmasını kontrol eden code create ediniz..
+                    artık yıl:
+                    Kural1: 4 ile bölünemeyen yıllar artık yıl değildir.
+                    Kural2: 4 ile bölünüp 100 ile bölünemeyen yıllar artık yıldır.
+                    Kural3: 4’ün katı olmasına rağmen 100 ile bölünebilen yıllardan sadece  400’ün katı olan yıllar artık yıldır.
+                 */
+                Scanner sc=new Scanner(System.in);
+                System.out.println("Yıl giriniz");
+                int yil=sc.nextInt();
+                // 4'un katı       100'un katı olmamamsı    400'un katı olması
+                if (yil%4==0&&yil%100!=0||yil%400==0)
+                    System.out.println("Artık yıl ");
+                else System.out.println("Artık yil değil");
+
+
+  //TASK: Artık yıl tespiti yapan code create ediniz
+             /*
+        girilen bir yılın artık (LEAP YEAR) olmasını kontrol eden code create ediniz..
+            artık yıl:
+            Kural1: 4 ile bölünemeyen yıllar artık yıl değildir.
+            Kural2: 4 ile bölünüp 100 ile bölünemeyen yıllar artık yıldır.
+            Kural3: 4’ün katı olmasına rağmen 100 ile bölünebilen yıllardan sadece  400’ün katı olan yıllar artık yıldır.
+         */
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Yıl giriniz");
+        int yil=sc.nextInt();
+        // 4'un katı       100'un katı olmamamsı    400'un katı olması
+        if (yil%4==0&&yil%100!=0||yil%400==0)
+            System.out.println("Artık yıl ");
+        else System.out.println("Artık yil değil");
+
+
+        //TASK : girilen iki sayiyi seeçilen 4 işlemden birine uygulayıp sonucu print eden code create ediniz
+                Scanner sc = new Scanner(System.in);
+
+                System.out.print("1. sayıyı giriniz : ");
+                double sayi1 = sc.nextDouble();
+
+                System.out.print("2. sayıyı giriniz : ");
+                double sayi2 = sc.nextDouble();
+
+                System.out.println("+ için -> 1 seciniz \n- için -> 2 seçiniz \n* için -> 3 seciniz\n/ için -> 4 seciniz");
+                int secim = sc.nextInt();// ch secim=sc.next().charAt() yaparaka 1,2,3,4 yerine '+','-','*','/' işaretleri kullanılabilir
+                if (secim == 1) {
+                    System.out.println("toplama sonucu : " + sayi1 + "+" + sayi2 + "=" + (sayi1 + sayi2));
+                } else if (secim == 2) {
+                    System.out.println("cıkarma sonucu : " + sayi1 + "-" + sayi2 + "=" + (sayi1 - sayi2));
+                } else if (secim == 3) {
+                    System.out.println("carpma sonucu : " + sayi1 + "*" + sayi2 + "=" + (sayi1 * sayi2));
+                } else if (secim == 4) {
+                    System.out.println("bolme sonucu : " + sayi1 + "/" + sayi2 + "=" + (sayi1 / sayi2));
+
+                } else System.out.println("agam ne istiyon adam akıllı bişey gir işlemini yapalım");
+
+ /*
+          TASK -> kullanıcının cinsiyeti KADIN ise 60 yasından buyuk ve prim gunu 6000 den  fazla ise emekliliğini
+                kullanıcının cinsiyeti ERKEK ise 65 yasından buyuk ve prim gunu 7000 den  fazla ise emekliliğini
+                kontrol edip kalan yıl ve prim gununu print eden code create ediniz..
+
+         */
+        Scanner sc = new Scanner(System.in);
+
+System.out.print("cinsiyetiniz \n KADIN için-> K\n ERKEK için-> E\n giriniz : ");
+        char cnsyt = sc.next().charAt(0);
+
+
+        if (cnsyt == 'K') {//cinsiyetin kadın olması kontrol edildi
+            System.out.println("yasınızı giriniz : ");
+            int yas = sc.nextInt();
+            if (yas > 60) {//yasın 60 dan buyuklugu kontrol edildi
+                System.out.print("prim gununuzu giriniz :");
+                int primGunu = sc.nextInt();
+
+                if (primGunu > 6000) {//prim gunu 6000 den buyuk olması kontrol edildi
+                    System.out.println("tebrikler NİNEM emekli oldunuz haydı emekli parasını torunlara yedirmeye :) ");
+                } else System.out.println("emeliliğiniz için: " + (6000 - primGunu) + " gun  yatırmanız lazım");
+
+            } else System.out.println("emekliliğinize daha : " + (60 - yas) + " yıl daha var");
+
+        } else if (cnsyt == 'E') {
+            System.out.println("yasınızı giriniz : ");
+            int yas = sc.nextInt();
+            if (yas > 65) {//yasın 65 dan buyuklugu kontrol edildi
+                System.out.print("prim gununuzu giriniz :");
+                int primGunu = sc.nextInt();
+
+                if (primGunu > 7000) {//prim gunu 7000 den buyuk olması kontrol edildi
+                    System.out.println("tebrikler DEDEM emekli oldunuz haydı emekli parasını torunlara yedirmeye :) ");
+                } else System.out.println("emeliliğiniz için: " + (7000 - primGunu) + " yatırmanız lazım");
+
+            } else System.out.println("emekliliğinize daha : " + (65 - yas) + " yıl daha var");
+
+
+        } else System.out.println("agam ne oldugunu yaz ona göre emekli edeyim seni :( ");
+
+
+/*
+          TASK -> Kuualanıcının ehliyetinin varlığını kontrol ediniz.
+          Ehliyeti varsa yıl tecrübesi 7 yıl ve üstü ise aldıgı mesafe 100000 km ve üzeri ise kontak anahtarını veriniz
+          aksi durumda tecrübe yılı ve mesafe eksiklerini print eden code create ediniz
+
+
+         */
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("ehliyetiniz var ise E yoksa H giriniz : ");
+
+        char ehlyt = sc.next().charAt(0);//kullanıcının girdiği karakteri buyuk harfe cevirip ilk değerini alır
+        if (ehlyt == 'E'||ehlyt =='e') {//ehlyt varlığı k0ntrol edildi
+
+            System.out.print("kac yıllık tecrübeniz var :");
+            int tcrb = sc.nextInt();
+
+            if (tcrb >= 7) {//tecrübe yılı kntrol edildi
+                System.out.print("yaptıgınız km mesafeyi girniz : ");
+                int km = sc.nextInt();
+                if (km >= 100000) {//km mesafe kontrol edildi
+                    System.out.println("agam gözün aydın kontak anahtarı senindir :)");
+                } else//km sartı saglamazsa çalışır
+                    System.out.println("kontak anahatarı lamanız için önce " + (100000 - km) + " yola ihtiyacınız var");
+
+            } else //tecrübe şartı sağlamzsa çalışır
+                System.out.println("kontak anahatarı lamanız için önce " + (7 - tcrb) + " yıla ihtiyacınız var");
+            //yıl 7den byk olma şartı sağlamadığı içib eksik trc yazdrıldı
+
+        } else
+            if (ehlyt == 'H'||ehlyt=='h') {//ehliyet yoklugu kontrol edildi
+            System.out.println("agam önce bi ehliyet al sonra kontak anahtarı sor :(");
+        } else //ehlyt varlığı için e h girilme şartı sağlanmazsa  çalışır
+            System.out.println("agam önce adam gibi karakter gir :(");
+
+
+	/*
+		 Nested If : Ic ice girmis if statementlar
+		 */
+		/*
+		 Kullanicidan bir sayi alin
+
+		 Eger sayi pozitif ise; 10dan buyuk olup olmadigini kontrol edin
+		 Eger 10 dan buyuk ise "Buyuksun!" yazdirin
+		 Eger 10 dan kucuk ise "Normalsin!" yazdirin
+
+		 Eger sayi pozitif degil ise; -10dan buyuk olup olmadigini kontrol edin
+		 Eger -10 dan buyuk ise "Negatifsin!" yazdirin
+		 Eger -10 dan kucuk ise "Cok Negatifsin!" yazdirin
+		 */
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir sayi girin");
+        double sayi = scan.nextDouble();
+        if (sayi > 0) {
+            if (sayi > 10) {
+                System.out.println("Buyuksun");
+            } else {
+                System.out.println("Normalsin");
+            }
+        } else {
+            if (sayi > -10) {
+                System.out.println("Negatifsin");
+            } else {
+                System.out.println("Cok negatifsin");
+            }
+        }

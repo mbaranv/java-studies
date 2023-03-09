@@ -1,0 +1,32 @@
+           /*
+        TASK :
+       Kullanicidan bir sayi aliniz
+       Sayi 0 dan buyuk esit ise 10 dan kucuk olup olmadigini kontrol ediniz.
+       10 dan kucuk ise ekrana "Rakam" yazdiriniz degilse "Pozitif Sayi" yazdiriniz.
+       Sayi o dan kucuk ise ekrana "Negatif Sayi" yazdiriniz.
+        */
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Lütfen bir sayı giriniz");
+        int value=sc.nextInt();
+
+      String sonuc=value>0 ? (value<10 ? "sayı 10dan küçük" : "Sayı 10 dan büyük") :"Negatif sayı";
+        System.out.println(sonuc);
+
+
+
+ /*
+        TASK :
+         Girilen bir pozitif tamsayı  4 basamaklı ise  “4 Basamaklı” print eden
+         4 basamaklı degilse çift olup olmadigini kontrol edip. Çift ise “4 basamaklı olmayan çift sayı” yazdırın.
+         Çift sayı degilse “4 basamaklı olmayan tek sayı yazdırın.”
+
+         */
+  Scanner sc = new Scanner(System.in);
+
+        System.out.println("Lütfen bir sayı giriniz");
+        int sayi=sc.nextInt();
+
+        System.out.println(sayi > 999 && sayi < 10000 ? "4 basamaklı" : (sayi % 2 == 0) ? "4 basamklı olmayan çift sayı" : "4 basamaklı olmayan tek sayı");
+

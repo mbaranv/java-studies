@@ -1,0 +1,42 @@
+/* Ternary ile yapilan tum islemler if-else blok ile de yapilabilir
+ ternary tercih edilmesi yapinin basit okunabilir ve anlasilabilir olmasi içindir -> clean code
+ Ternary icerisinde kompleks kodlar yerine dogrudan sonuç üreten veya sonucu veren
+ daha basic code'lar bulunur.
+
+ */
+        // TASK01 -> girilen bir tamsayının tek-çift olmasını kontrol eden code create ediniz.
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Lütfen bir tamsayı giriniz");
+        int sayi = sc.nextInt();
+
+        String sonuc = sayi% 2 == 0 ? "çift sayi" : "tek sayi";// Komut çıktısı String tipinde variable dir
+        System.out.println(sonuc);
+// VEYA if (sayi % 2 == 0) System.out.println("çift sayi");
+//      else System.out.println("tek sayi"); yapabilirdik
+   // NOT: sayi%2==0?"çift":"tek".sout YAPARAKTA sout komutu çağırıp çıktı alabilirdik.
+        // Diğer koddan farkı sonucumuzu stringe bağlamadan işlem yaptık
+
+        //TASK: Girilen sayının negatif pozitifliğini kontrol ediniz
+        System.out.println(sayi > 0 ? "pozitif" : "pozitif değil");// 0 şartı için
+
+
+        //TASK: Girilen bir tamsayı çiftse yarısını tekse "girilen sayı tek olduğu için yarısı tamsayı olmaz" şeklinde yazdıran code
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Lütfen bir tamsayi giriniz");
+        int x = sc.nextInt();
+
+      String sonuc= x%2==0 ? String.valueOf(x/2) : "Sayı tek olduğu için yarısı tamsayı değildir";
+        // veya System.out.println(x % 2 == 0 ? x / 2 : "sayı tek");
+        System.out.println(sonuc);
+
+
+
+        //TASK: Girilen pozitif tamsayının 2 veya üzeri basamaklı olmasını kontrol ediniz
+                Scanner sc=new Scanner(System.in);
+                System.out.println("Lütfen bir sayı giriniz");
+                int sayi=sc.nextInt();
+        String text;
+                System.out.println(sayi > 0 && sayi < 10 ? "Sayı tek basamaklı" : "Sayı 2 ve daha üzeri basamaklı");
+        text=sayi>0 && sayi <10 ?"tek basamaklı":"çift basamaklı";
