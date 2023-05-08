@@ -1,0 +1,31 @@
+
+
+         System.out.println(" selam javacanlar bolcana offer");//döngü dışı 1 kez run olu
+      //   Task 2 basamaklı tek sayıları yan yana print eden code create ediniz -> 11,13,15...9
+         for (int i = 11; i <=99 ; i+=2) {
+             System.out.print(i+" ");
+         }
+         System.out.println("   ***   ");
+         for (int i = 10; i <100 ; i++) {
+             if (i%2==1){
+                 System.out.print(i+" ");
+             }
+         }
+
+
+
+        // çalışmayan loop
+        for (int i = 0; i >10 ; i++) {//şartı sağlamayan->False olan for body run almaz
+            // kod kırılarak sıradaki satırdan(46) devam eder
+            System.out.println("selam javacan");
+
+        }
+        System.out.println("agam bumetni okuduysan yukarıdaki for çalışmadı");
+
+
+
+        // durmayan sonsuz loop
+       for (int i = 0; i >=0 ; i++) {//bu for sonsuza kadar çalışır:)
+            // durduran aşk olsun
+          System.out.println(i);
+        }
